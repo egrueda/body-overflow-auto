@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 250px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+    
+    .container {
+      text-align: center;
+    }
+    
+    h2 {
+      color: #333;
+      margin: 0 0 15px 0;
+      font-size: 16px;
+    }
+    
+    .btn {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      width: 100%;
+      margin: 5px 0;
+      transition: background 0.3s;
+    }
+    
+    .btn:hover {
+      background: #45a049;
+    }
+    
+    .btn-reset {
+      background: #f44336;
+    }
+    
+    .btn-reset:hover {
+      background: #da190b;
+    }
+    
+    .status {
+      margin-top: 15px;
+      padding: 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      text-align: center;
+    }
+    
+    .status.success {
+      background: #dff0d8;
+      color: #3c763d;
+      border: 1px solid #d6e9c6;
+    }
+    
+    .status.info {
+      background: #d9edf7;
+      color: #31708f;
+      border: 1px solid #bce8f1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Body Overflow Control</h2>
+    
+    <button id="setAuto" class="btn">
+      Establecer overflow: auto
+    </button>
+    
+    <button id="resetOverflow" class="btn btn-reset">
+      Restaurar overflow original
+    </button>
+    
+    <div id="status" class="status" style="display: none;"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
